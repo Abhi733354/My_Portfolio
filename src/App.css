@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+
+.header {
+  @apply w-full 
+  shadow-sm;
+}
+.header-light {
+  @apply bg-white text-gray-900;
+}
+
+.header-dark {
+  @apply bg-gray-900 text-white;
+}
+
+.content-light {
+  @apply bg-yellow-200 text-[#343a40];
+}
+
+.content-dark {
+  @apply bg-gray-900 text-white;
+}
+
+.header-container {
+  @apply container mx-auto flex items-center justify-between p-4;
+}
+
+/* ===========================
+   Logo
+   =========================== */
+.header-logo {
+  @apply text-2xl font-bold;
+}
+
+/* ===========================
+   Navigation Links
+   =========================== */
+.header-nav {
+  @apply hidden md:flex space-x-6;
+}
+
+.header-link {
+  @apply hover:text-yellow-400 font-medium transition;
+}
+
+/* ===========================
+   Right Actions (Theme + Menu)
+   =========================== */
+.header-actions {
+  @apply flex items-center space-x-4;
+}
+
+.theme-btn {
+  @apply p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700;
+}
+
+.menu-btn {
+  @apply md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700;
+}
+
+/* ===========================
+   Mobile Navigation
+   =========================== */
+.mobile-nav {
+  @apply md:hidden flex flex-col space-y-2 px-4 pb-4;
+}
+
+.mobile-nav-light {
+  @apply bg-gray-100;
+}
+
+.mobile-nav-dark {
+  @apply bg-gray-800;
+}
