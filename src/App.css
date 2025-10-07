@@ -80,3 +80,24 @@ section {
 .mobile-nav-dark {
   @apply bg-gray-800;
 }
+
+
+/* Simple slide-in + fade-in animation for name */
+@keyframes textSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-textSlide {
+  animation: textSlide 1.5s ease-out forwards;
+}

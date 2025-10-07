@@ -6,13 +6,13 @@ import Resume from '../contents/Resume'
 import Skills from '../contents/Skills'
 import Project from '../contents/Project'
 
-const HomePage = ({darkMode}) => {
+const HomePage = ({ darkMode }) => {
   return (
-    <div>
+    <div className="space-y-16"> {/* spacing between each section */}
       <Content1 darkMode={darkMode}/>
       <About darkMode={darkMode}/>
-      <WhatIDo  darkMode={darkMode}/>
-      <Resume darkMode={darkMode} />
+      <WhatIDo darkMode={darkMode}/>
+      <Resume darkMode={darkMode}/>
       <Skills darkMode={darkMode}/>
       <Project darkMode={darkMode}/>
     </div>
@@ -20,3 +20,4 @@ const HomePage = ({darkMode}) => {
 }
 
 export default HomePage
+
