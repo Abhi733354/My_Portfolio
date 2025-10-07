@@ -47,9 +47,8 @@ const Project = ({ darkMode }) => {
           {projects.map((proj, idx) => (
             <div
               key={idx}
-              className={`card rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300 ${
-                darkMode ? "bg-gray-900 border border-gray-800" : "bg-white"
-              }`}
+              className={`card rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300 ${darkMode ? "bg-gray-900 border border-gray-800" : "bg-white"
+                }`}
             >
               <img
                 src={proj.image}
@@ -72,16 +71,18 @@ const Project = ({ darkMode }) => {
                     href={proj.liveLink}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='text-yellow-200 text-sm font-medium'
+                    className='text-white hover:text-yellow-200  text-sm font-medium'
                   >
                     Live Preview
                   </a>
-                  <Link
-                    to={proj.codeLink}
-                    className='text-yellow-200 text-sm font-medium '
+                  <a
+                    href={proj.codeLink}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-white hover:text-yellow-200  text-sm font-medium'
                   >
                     Get Code
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
