@@ -7,7 +7,7 @@ const Content1 = ({ darkMode }) => {
   return (
     <section
       id="home"
-      className={`min-h-screen flex items-center justify-center ${darkMode ? "bg-gray-900" : "bg-yellow-200 text-[#343a40]"
+      className={`pt-16 min-h-screen flex items-center justify-center ${darkMode ? "bg-gray-900" : "bg-yellow-200 text-[#343a40]"
         }`}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl px-6 md:px-10">

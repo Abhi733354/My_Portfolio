@@ -4,8 +4,8 @@ const Skills = ({ darkMode }) => {
   return (
     <section id='skills' className={`px-6 md:px-10 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"}`}>
       <div className='max-w-6xl mx-auto'>
-        <div className='text-center mb-12'>
-          <h4 className={`text-3xl font-medium ${darkMode ? "text-white" : "text-gray-600"}`}>My Skills</h4>
+        <div className='text-center mb-6 md:mb-12'>
+          <h4 className={`text-2xl md:text-3xl font-medium ${darkMode ? "text-white" : "text-gray-600"}`}>My Skills</h4>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

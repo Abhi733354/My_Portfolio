@@ -8,25 +8,25 @@ const Resume = ({ darkMode }) => {
       className={`pb-16 px-6 md:px-10 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"}`}
     >
       <div className='max-w-6xl mx-auto'>
-        <div className='text-center mb-12'>
-          <h4 className={`text-3xl font-medium ${darkMode ? "text-white" : "text-gray-600"}`}>
+        <div className='text-center mb-6 md:mb-12'>
+          <h4 className={`text-2xl md:text-3xl font-medium ${darkMode ? "text-white" : "text-gray-600"}`}>
             Resume
           </h4>
-          <h2 className={`text-2xl font-bold mt-2 ${darkMode ? "text-white" : "text-gray-900"}`}>
+          <h2 className={`texl-xl md:text-2xl font-bold mt-2 ${darkMode ? "text-white" : "text-gray-900"}`}>
             A Summary of My Resume
           </h2>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-12 '>
           {/* Experience */}
           <div>
-            <h4 className={`text-xl font-bold mb-4 ${darkMode ? "text-white" : "text-gray-700"}`}>
+            <h4 className={`text-xl font-bold mb-2 ${darkMode ? "text-white" : "text-gray-700"}`}>
               My Experience
             </h4>
 
             {/* Experience Item */}
-            <div className='border-l-4 border-blue-500 pl-4 space-y-3'>
-              <h4 className={`text-xl font-semibold ${darkMode ? "text-white" : "text-gray-700"}`}>
+            <div className='border-l-4 border-blue-500 pl-4 space-y-1'>
+              <h4 className={`text-l font-semibold ${darkMode ? "text-white" : "text-gray-700"}`}>
                 Software Developer
               </h4>
               <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-700"}`}>
@@ -48,13 +48,13 @@ const Resume = ({ darkMode }) => {
                   </svg>
                   BlueSky Intel (AI & Blockchain Intelligence Platform)
                 </Link>
-                <p className={`text-base leading-relaxed ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <p className={`text-sm font-normal leading-relaxed ${darkMode ? "text-white" : "text-gray-600"}`}>
                   Independently handled the React-based portal of a multi-user platform connecting
                   Business Users, Solution Providers, and Investors. Integrated OpenAI APIs,
                   Socket.io-powered real-time chat, Kanban boards, and Stripe subscriptions
                   with role-based access control.
                 </p>
-                <h4 className={`text-xl font-semibold mt-3 ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-l font-semibold mt-2 ${darkMode ? "text-white" : "text-gray-700"}`}>
                   Tech Stack:
                 </h4>
                 <div className="flex flex-wrap gap-3 mt-2">
@@ -91,7 +91,7 @@ const Resume = ({ darkMode }) => {
 
               {/* project link 2 */}
 
-              <div>
+              <div className='mt-3'>
                 <Link
                   to="https://weteams.ai/#/"
                   className="flex items-center text-blue-600 hover:underline text-sm"
@@ -107,12 +107,12 @@ const Resume = ({ darkMode }) => {
                   </svg>
                   WeTeams (Project & Resource Management Tool)
                 </Link>
-                <p className={`text-base leading-relaxed ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <p className={`text-sm font-normal leading-relaxed ${darkMode ? "text-white" : "text-gray-600"}`}>
                   Developed a smart project management platform with React.js, Redux Toolkit, and RTK Query.
                   Refactored codebase and integrated Jira and Asana APIs to track employee hours, sprint progress,
                   and resource allocation. Empowered managers with actionable reports and team performance insights.
                 </p>
-                <h4 className={`text-xl font-semibold mt-3 ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-l font-semibold mt-3 ${darkMode ? "text-white" : "text-gray-700"}`}>
                   Tech Stack:
                 </h4>
                 <div className="flex flex-wrap gap-3 mt-2">
@@ -140,49 +140,49 @@ const Resume = ({ darkMode }) => {
 
             <div className='border-l-4 border-yellow-200 pl-4 space-y-5'>
               <div>
-                <h4 className={`text-xl font-semibold ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-l font-semibold ${darkMode ? "text-white" : "text-gray-600"}`}>
                   Full Stack Web Development
                 </h4>
-                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-600"}`}>
                   Newton School Pvt. Ltd.| Nov 2022 - May 2023
                 </h4>
-                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-600"}`}>
                   GetePay Pvt. Ltd. | June 2023 - Present
                 </h4>
               </div>
 
               <div>
-                <h4 className={`text-xl font-semibold ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-l font-semibold ${darkMode ? "text-white" : "text-gray-600"}`}>
                   Bachelor In Technology
                 </h4>
-                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-600"}`}>
                   Rajasthan Technical University | Aug 2016 - June 2020
                 </h4>
-                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-600"}`}>
                   Completed With 70%
                 </h4>
               </div>
 
               <div>
-                <h4 className={`text-xl font-semibold ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-l font-semibold ${darkMode ? "text-white" : "text-gray-600"}`}>
                   XII Class
                 </h4>
-                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-600"}`}>
                   SP Public School | July 2014 - June 2015
                 </h4>
-                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-600"}`}>
                   Completed With 73%
                 </h4>
               </div>
 
               <div>
-                <h4 className={`text-xl font-semibold ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-l font-semibold ${darkMode ? "text-white" : "text-gray-600"}`}>
                   X Class
                 </h4>
-                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-600"}`}>
                   SP Public School | July 2012 - June 2013
                 </h4>
-                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-700"}`}>
+                <h4 className={`text-sm font-normal ${darkMode ? "text-white" : "text-gray-600"}`}>
                   Completed With 77%
                 </h4>
               </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = ({ darkMode }) => {
   return (
-    <footer className={` w-full transition-colors duration-300 ${darkMode ? "bg-gray-900 text-white" : "bg-yellow-200 text-gray-900"}`}>
+    <footer className={`w-full transition-colors duration-300 ${darkMode ? "bg-gray-900 text-white" : "bg-yellow-200 text-gray-900"}`}>
       <div className={`max-w-6xl mx-auto px-6 md:px-12 py-12`}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
@@ -39,11 +39,32 @@ const Footer = ({ darkMode }) => {
 
           {/* Contact Form */}
           <div>
-            <h4 className="text-xl font-bold mb-4">Estimate your next project</h4>
+            <h4 className="text-xl text-gray-900 font-bold mb-4">Estimate your next project</h4>
             <form className="space-y-4 max-w-md">
-              <input type="text" placeholder="Enter Your Name" className="w-full px-4 py-2 rounded-lg border border-black focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-700 placeholder-gray-400" />
-              <input type="email" placeholder="Enter Your Email" className="w-full px-4 py-2 rounded-lg border border-black focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-700 placeholder-gray-400" />
-              <textarea placeholder="How Can I Help You?" rows="4" className="w-full px-4 py-2 rounded-lg border border-black focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-700 placeholder-gray-400 resize-none"></textarea>
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                className="w-full px-4 py-2 rounded-lg border border-gray-600 
+             focus:outline-none focus:ring-1 focus:ring-yellow-400 
+             focus:border-yellow-300 text-gray-700 placeholder-gray-400"
+              />
+
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                className="w-full px-4 py-2 rounded-lg border border-gray-600 
+             focus:outline-none focus:ring-1 focus:ring-yellow-400 
+             focus:border-yellow-300 text-gray-700 placeholder-gray-400"
+              />
+
+              <textarea
+                placeholder="How Can I Help You?"
+                rows="4"
+                className="w-full px-4 py-2 rounded-lg border border-gray-600 
+             focus:outline-none focus:ring-1 focus:ring-yellow-400 
+             focus:border-yellow-300 text-gray-700 placeholder-gray-400 resize-none"
+              />
+
               <button type="submit" className={`w-full flex items-center justify-center gap-2 bg-yellow-300 text-gray-800 font-semibold py-2 rounded-lg shadow-md  hover:text-white transition-colors ${darkMode ? "text-white hover:bg-yellow-600 " : "hover:bg-yellow-600"}`}>
                 Send
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">

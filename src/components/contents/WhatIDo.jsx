@@ -13,11 +13,11 @@ const WhatIDo = ({ darkMode }) => {
       className={`py-0 px-6 md:px-10 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"}`}
     >
       <div className='max-w-6xl mx-auto'>
-        <div className='text-center mb-12'>
-          <h4 className={`text-3xl font-medium ${darkMode ? "text-white" : "text-gray-600"}`}>
+        <div className='text-center mb-6 md:mb-12'>
+          <h4 className={`text-2xl md:text-3xl font-medium ${darkMode ? "text-white" : "text-gray-600"}`}>
             What I Do
           </h4>
-          <h2 className={`text-2xl font-bold mt-2 ${darkMode ? "text-white" : "text-gray-900"}`}>
+          <h2 className={`text-xl md:text-2xl font-bold mt-2 ${darkMode ? "text-white" : "text-gray-900"}`}>
             How Can I Help Your Organization
           </h2>
         </div>

@@ -7,14 +7,14 @@ const About = ({ darkMode }) => {
       className={`py-0 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"}`}
     >
       <div className='max-w-6xl mx-auto px-6 md:px-10'>
-        <div className='text-center mb-12'>
-          <h4 className={`text-3xl font-medium ${darkMode ? "text-white" : "text-gray-600"}`}>About Me</h4>
-          <h2 className={`text-2xl font-bold mt-2 ${darkMode ? "text-white" : "text-gray-900"}`}>Know Me More</h2>
+        <div className='text-center mb-6 md:mb-12'>
+          <h4 className={`text-2xl md:text-3xl  font-medium ${darkMode ? "text-white" : "text-gray-600"}`}>About Me</h4>
+          <h2 className={`text-xl md:text-2xl font-bold mt-2 ${darkMode ? "text-white" : "text-gray-900"}`}>Know Me More</h2>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-6 md:mb-12 '>
           <div>
-            <p className={`text-base md:text-lg font-normal leading-relaxed ${darkMode ? "text-white" : "text-gray-600"}`}>
+            <p className={`text-lg md:text-lg font-normal leading-relaxed ${darkMode ? "text-white" : "text-gray-600"}`}>
               <span className='font-bold text-lg md:text-xl'>
                 Hi, I'm Abhinay Sharma.
               </span>{' '}

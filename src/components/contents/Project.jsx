@@ -38,9 +38,9 @@ const Project = ({ darkMode }) => {
       className={`pb-12 px-6 md:px-10 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"}`}
     >
       <div className='max-w-6xl mx-auto'>
-        <div className='text-center mb-12'>
-          <h4 className={`text-3xl font-medium ${darkMode ? "text-white" : "text-gray-600"}`}>Projects</h4>
-          <h2 className={`text-2xl font-bold mt-2 ${darkMode ? "text-white" : "text-gray-900"}`}>Some of my personal work</h2>
+        <div className='text-center mb-6 md:mb-12'>
+          <h4 className={`text-2xl md:text-3xl font-medium ${darkMode ? "text-white" : "text-gray-600"}`}>Projects</h4>
+          <h2 className={`text-xl md:text-2xl font-bold mt-2 ${darkMode ? "text-white" : "text-gray-900"}`}>Some of my personal work</h2>
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>

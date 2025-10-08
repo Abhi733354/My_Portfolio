@@ -6,8 +6,8 @@ const Header = ({ darkMode, setDarkMode }) => {
 
   return (
     <header className={`fixed top-0 w-full z-50 backdrop-blur-lg transition-colors duration-300 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}>
-      <div className="flex justify-between items-center px-6 md:px-12 py-4">
-        <h1 className="text-xl font-bold">PORTFOLIO</h1>
+      <div className="flex justify-between items-center px-6 md:px-12 md:py-4">
+        <h1 className="text-l md:text-xl font-bold">PORTFOLIO</h1>
 
         <nav className="hidden md:flex gap-6">
           <a href="#home" className="hover:text-yellow-400 transition">Home</a>
@@ -37,15 +37,18 @@ const Header = ({ darkMode, setDarkMode }) => {
 
       {/* Mobile Menu */}
       <nav
-        className={`md:hidden flex flex-col items-center gap-4 py-4 transition-all duration-300 overflow-hidden 
+        className={` md:hidden flex flex-col items-center gap-4 transition-all duration-300 overflow-hidden 
           ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"} 
           ${menuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}
       >
-        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-        <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
-        <Link to="/what-i-do" onClick={() => setMenuOpen(false)}>My Work</Link>
-        <Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
-        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+
+          <a href="#home" className="hover:text-yellow-400 transition" onClick={() => setMenuOpen(false)}>Home</a>
+          <a href="#about" className="hover:text-yellow-400 transition" onClick={() => setMenuOpen(false)}>About</a>
+          <a href="#what-i-do" className="hover:text-yellow-400 transition" onClick={() => setMenuOpen(false)}>What I Do</a>
+          <a href="#resume" className="hover:text-yellow-400 transition" onClick={() => setMenuOpen(false)}>Resume</a>
+          <a href="#skills" className="hover:text-yellow-400 transition" onClick={() => setMenuOpen(false)}>Skills</a>
+          <a href="#projects" className="hover:text-yellow-400 transition" onClick={() => setMenuOpen(false)}>Projects</a>
+
       </nav>
     </header>
   );
