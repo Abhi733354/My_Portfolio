@@ -5,23 +5,23 @@ import "../../App.css"
 
 const Content1 = ({ darkMode }) => {
   return (
-    <section
-      id="home"
-      className={`pt-16 min-h-screen flex items-center justify-center ${darkMode ? "bg-gray-900" : "bg-yellow-200 text-[#343a40]"
-        }`}
-    >
+      <section
+        id="home"
+        className={`pt-16 min-h-screen flex items-center justify-center ${darkMode ? "bg-gray-900" : "bg-yellow-200 text-[#343a40]"
+          }`}
+      >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl px-6 md:px-10 p-4 md:py-0">
         <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-3">
-          <h4 className="text-3xl md:text-[3rem] tracking-tight font-normal">
+          <h4 className="text-3xl md:text-[2.5rem] tracking-tight font-normal">
             Hii, I'M A
           </h4>
 
           {/* Typing Effect Name */}
-          <h4 className="text-2xl md:text-[3.5rem] font-bold tracking-tight typing">
+          <h4 className="text-2xl md:text-[3rem] font-bold tracking-tight typing">
             ABHINAY SHARMA
           </h4>
 
-          <h3 className="text-xl md:text-[2rem]  tracking-tight font-normal">
+          <h3 className="text-xl md:text-[1.5rem]  tracking-tight font-normal">
             SOFTWARE DEVELOPER
           </h3>
 

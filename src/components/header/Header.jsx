@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Header = ({ darkMode, setDarkMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+   const [activeLink, setActiveLink] = useState("home");
+
 
   return (
     <header className={`fixed top-0 w-full z-50 backdrop-blur-lg transition-colors duration-300 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}>
@@ -10,12 +12,89 @@ const Header = ({ darkMode, setDarkMode }) => {
         <h1 className="text-l md:text-xl font-bold">PORTFOLIO</h1>
 
         <nav className="hidden md:flex gap-6">
-          <a href="#home" className="hover:text-yellow-400 transition">Home</a>
-          <a href="#about" className="hover:text-yellow-400 transition">About</a>
-          <a href="#what-i-do" className="hover:text-yellow-400 transition">What I Do</a>
-          <a href="#resume" className="hover:text-yellow-400 transition">Resume</a>
-          <a href="#skills" className="hover:text-yellow-400 transition">Skills</a>
-          <a href="#projects" className="hover:text-yellow-400 transition">Projects</a>
+          <a
+            href="#home"
+            onClick={() => setActiveLink("home")}
+            className={`hover:text-yellow-400 transition ${
+              activeLink === "home"
+                ? "text-yellow-200 font-semibold"
+                : darkMode
+                ? "text-gray-300"
+                : "text-gray-900"
+            }`}
+          >
+            Home
+          </a>
+
+          <a
+            href="#about"
+            onClick={() => setActiveLink("about")}
+            className={`hover:text-yellow-400 transition ${
+              activeLink === "about"
+                ? "text-yellow-200 font-semibold"
+                : darkMode
+                ? "text-gray-300"
+                : "text-gray-900"
+            }`}
+          >
+            About
+          </a>
+
+          <a
+            href="#what-i-do"
+            onClick={() => setActiveLink("what-i-do")}
+            className={`hover:text-yellow-400 transition ${
+              activeLink === "what-i-do"
+                ? "text-yellow-200 font-semibold"
+                : darkMode
+                ? "text-gray-300"
+                : "text-gray-900"
+            }`}
+          >
+            What I Do
+          </a>
+
+          <a
+            href="#resume"
+            onClick={() => setActiveLink("resume")}
+            className={`hover:text-yellow-400 transition ${
+              activeLink === "resume"
+                ? "text-yellow-200 font-semibold"
+                : darkMode
+                ? "text-gray-300"
+                : "text-gray-900"
+            }`}
+          >
+            Resume
+          </a>
+
+          <a
+            href="#skills"
+            onClick={() => setActiveLink("skills")}
+            className={`hover:text-yellow-400 transition ${
+              activeLink === "skills"
+                ? "text-yellow-200 font-semibold"
+                : darkMode
+                ? "text-gray-300"
+                : "text-gray-900"
+            }`}
+          >
+            Skills
+          </a>
+
+          <a
+            href="#projects"
+            onClick={() => setActiveLink("projects")}
+            className={`hover:text-yellow-400 transition ${
+              activeLink === "projects"
+                ? "text-yellow-400 font-semibold"
+                : darkMode
+                ? "text-gray-300"
+                : "text-gray-900"
+            }`}
+          >
+            Projects
+          </a>
         </nav>
 
         <div className="flex items-center gap-4">

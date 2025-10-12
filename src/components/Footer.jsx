@@ -1,93 +1,128 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 const Footer = ({ darkMode }) => {
   return (
-    <footer className={`w-full transition-colors duration-300 ${darkMode ? "bg-gray-900 text-white" : "bg-yellow-200 text-gray-900"}`}>
-      <div className={`max-w-6xl mx-auto px-6 md:px-12 py-12`}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <footer
+      className={`w-full transition-colors duration-300 ${
+        darkMode
+          ? "bg-gray-900 text-white"
+          : "bg-yellow-200 text-gray-900"
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-6 md:px-8 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-          {/* Contact Info */}
-          <div className="space-y-3">
-            <h4 className="text-xl font-bold">Let's get in touch</h4>
-            <p className="text-base md:text-lg leading-relaxed max-w-md">
-              I enjoy discussing new projects and design challenges. Please share as much
-              info as possible so we can get the most out of our first catch-up.
+        {/* 📨 Contact Info */}
+        <div className="space-y-3">
+          <h4 className="text-xl md:text-lg font-semibold">Let's get in touch</h4>
+          <p className="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+            I enjoy discussing new projects and design challenges. Please share
+            as much info as possible so we can get the most out of our first
+            catch-up.
+          </p>
+
+          <div className="space-y-2">
+            <p className="text-gray-600 dark:text-gray-400">
+              <strong className="text-gray-900 dark:text-white">Living In:</strong> Jaipur, Rajasthan
             </p>
-
-            <div className="space-y-2">
-              <p><strong>Living In:</strong> Jaipur, Rajasthan</p>
-              <p><strong>Contact:</strong> (+91) 6387436672</p>
-            </div>
-
-            <div className="flex items-center gap-4 mt-3">
-              {/* Social Icons */}
-              <a href="https://www.linkedin.com/in/abhinay-sharma127/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
-                {/* LinkedIn SVG */}
-              </a>
-              <a href="https://github.com/Abhi733354" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
-                {/* GitHub SVG */}
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
-                {/* Instagram SVG */}
-              </a>
-              <a href="mailto:abhinaysharma127@gmail.com" className="hover:text-yellow-400 transition">
-                {/* Mail SVG */}
-              </a>
-            </div>
+            <p className="text-gray-600 dark:text-gray-400">
+              <strong className="text-gray-900 dark:text-white">Contact:</strong> (+91) 6387436672
+            </p>
           </div>
 
-          {/* Contact Form */}
-          <div>
-            <h4 className="text-xl text-gray-900 font-bold mb-4">Estimate your next project</h4>
-            <form className="space-y-4 max-w-md">
-              <input
-                type="text"
-                placeholder="Enter Your Name"
-                className="w-full px-4 py-2 rounded-lg border border-gray-600 
-             focus:outline-none focus:ring-1 focus:ring-yellow-400 
-             focus:border-yellow-300 text-gray-700 placeholder-gray-400"
-              />
-
-              <input
-                type="email"
-                placeholder="Enter Your Email"
-                className="w-full px-4 py-2 rounded-lg border border-gray-600 
-             focus:outline-none focus:ring-1 focus:ring-yellow-400 
-             focus:border-yellow-300 text-gray-700 placeholder-gray-400"
-              />
-
-              <textarea
-                placeholder="How Can I Help You?"
-                rows="4"
-                className="w-full px-4 py-2 rounded-lg border border-gray-600 
-             focus:outline-none focus:ring-1 focus:ring-yellow-400 
-             focus:border-yellow-300 text-gray-700 placeholder-gray-400 resize-none"
-              />
-
-              <button type="submit" className={`w-full flex items-center justify-center gap-2 bg-yellow-300 text-gray-800 font-semibold py-2 rounded-lg shadow-md  hover:text-white transition-colors ${darkMode ? "text-white hover:bg-yellow-600 " : "hover:bg-yellow-600"}`}>
-                Send
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12l-3.75 3.75M21 12H3" />
-                </svg>
-              </button>
-            </form>
+          {/* Social Icons */}
+          <div className="flex items-center gap-4 mt-3 text-gray-700 dark:text-gray-300">
+            <a href="https://www.linkedin.com/in/abhinay-sharma127/" target="_blank" rel="noopener noreferrer"
+               className="hover:text-yellow-400 transition transform hover:scale-110">
+              <FaLinkedin className="w-6 h-6" />
+            </a>
+            <a href="https://github.com/Abhi733354" target="_blank" rel="noopener noreferrer"
+               className="hover:text-yellow-400 transition transform hover:scale-110">
+              <FaGithub className="w-6 h-6" />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+               className="hover:text-yellow-400 transition transform hover:scale-110">
+              <FaInstagram className="w-6 h-6" />
+            </a>
+            <a href="mailto:abhinaysharma127@gmail.com"
+               className="hover:text-yellow-400 transition transform hover:scale-110">
+              <FaEnvelope className="w-6 h-6" />
+            </a>
           </div>
+        </div>
 
+        {/* 🔗 Quick Links */}
+        <div>
+          <h4 className="text-xl md:text-lg font-semibold mb-4">Quick Links</h4>
+          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+            <li><Link to="/" className="hover:text-yellow-400 transition">Home</Link></li>
+            <li><Link to="/about" className="hover:text-yellow-400 transition">About</Link></li>
+            <li><Link to="/projects" className="hover:text-yellow-400 transition">Projects</Link></li>
+            <li><Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link></li>
+          </ul>
+        </div>
+
+        {/* ⚙️ Skills / Tech Stack */}
+        <div>
+          <h4 className="text-xl md:text-lg font-semibold mb-4">Tech Stack</h4>
+          <div className="flex flex-wrap gap-2">
+            {[
+              "React Js",
+              "Tailwind CSS",
+              "Bootstrap",
+              "Redux",
+              "JavaScript",
+              "Node.js",
+              "MongoDB",
+              "Express Js",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="bg-yellow-400  text-gray-600 px-2 py-2 rounded-lg text-sm font-medium dark:bg-gray-800 dark:text-yellow-300"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* ⏰ Availability */}
+        <div>
+          <h4 className="text-xl md:text-lg font-semibold mb-4">Availability</h4>
+          <p className="text-gray-700 dark:text-gray-300 mb-1">
+            Open for freelance projects and collaborations.
+          </p>
+          <p className="text-gray-700 dark:text-gray-300">
+            <strong>Available:</strong> Mon – Fri, 9:00 AM – 6:00 PM
+          </p>
+          <Link
+            to="/contact"
+            className="inline-block mt-4 bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg font-medium hover:bg-yellow-500 transition"
+          >
+            Let's Connect
+          </Link>
         </div>
       </div>
 
-      {/* Footer Bottom */}
-      <div className={`flex flex-col md:flex-row justify-between items-center py-5 px-6 md:px-12 border-t border-gray-700 ${darkMode ? "bg-gray-900 text-white" : "bg-black text-gray-700"}`}>
+      {/* 🧾 Footer Bottom */}
+      <div
+        className={`flex flex-col md:flex-row justify-between items-center py-5 px-6 md:px-12 border-t ${
+          darkMode
+            ? "border-gray-700 bg-gray-900 text-white"
+            : "border-gray-300 bg-yellow-100 text-gray-700"
+        }`}
+      >
         <p className="flex items-center gap-2 text-sm">
-          Designed By <span className="font-semibold text-yellow-200">Abhinay Sharma</span> with ❤️
+          Designed By{" "}
+          <span className="font-semibold text-yellow-500">Abhinay Sharma</span> with ❤️
         </p>
-        <p className="flex items-center gap-2 text-sm mt-2 md:mt-0">
-          @2025 <span className="font-semibold text-yellow-200">Abhinay.</span> All Rights Reserved.
+        <p className="text-sm mt-2 md:mt-0">
+          © 2025 <span className="font-semibold text-yellow-500">Abhinay</span>. All Rights Reserved.
         </p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
 export default Footer;

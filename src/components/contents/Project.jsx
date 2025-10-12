@@ -30,17 +30,18 @@ const Project = ({ darkMode }) => {
       liveLink: "https://sebt.netlify.app/",
       codeLink: "https://github.com/Abhi733354/E-Commerce-project.git",
     },
+    
   ];
 
   return (
     <section
       id='projects'
-      className={`pb-12 px-6 md:px-10 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"}`}
+      className={`pb-12 px-6 md:px-6 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"}`}
     >
       <div className='max-w-6xl mx-auto'>
-        <div className='text-center mb-6 md:mb-12'>
-          <h4 className={`text-2xl md:text-3xl font-medium ${darkMode ? "text-white" : "text-gray-600"}`}>Projects</h4>
-          <h2 className={`text-xl md:text-2xl font-bold mt-2 ${darkMode ? "text-white" : "text-gray-900"}`}>Some of my personal work</h2>
+        <div className='text-center mb-6 md:mb-6'>
+          <h4 className={`text-xl md:text-lg font-medium ${darkMode ? "text-white" : "text-gray-600"}`}>Projects</h4>
+          <h2 className={`text-lg md:text-lg font-normal mt-2 ${darkMode ? "text-white" : "text-gray-900"}`}>Some of my personal work</h2>
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
@@ -57,10 +58,10 @@ const Project = ({ darkMode }) => {
               />
 
               <div className={`${darkMode ? "bg-gray-900 text-white" : "bg-yellow-200 text-gray-900"}`}>
-                <h4 className={`text-xl font-semibold py-2 ${darkMode ? "text-white" : "text-gray-800"}`}>
+                <h4 className={`text-base md:text-base font-medium pt-2 ${darkMode ? "text-white" : "text-gray-800"}`}>
                   {proj.title}
                 </h4>
-                <p className={`text-sm font-normal leading-relaxed px-3 py-2 ${darkMode ? "text-white" : "text-gray-600"}`}>
+                <p className={`text-base md:text-base font-normal leading-relaxed px-2 py-2 ${darkMode ? "text-white" : "text-gray-600"}`}>
                   {proj.description}
                 </p>
               </div>
@@ -71,7 +72,7 @@ const Project = ({ darkMode }) => {
                     href={proj.liveLink}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='text-white hover:text-yellow-200  text-sm font-medium'
+                    className='text-white hover:text-yellow-200 text-base md:text-base font-normal'
                   >
                     Live Preview
                   </a>
@@ -79,7 +80,7 @@ const Project = ({ darkMode }) => {
                     href={proj.codeLink}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='text-white hover:text-yellow-200  text-sm font-medium'
+                    className='text-white hover:text-yellow-200 text-base md:text-base font-normal'
                   >
                     Get Code
                   </a>
